@@ -11,7 +11,7 @@ function goodVsEvil(good, evil) {
     if (goodNumber > evilNumber) {
         console.log("Battle Result: Good triumphs over Evil");
     } else if (goodNumber < evilNumber) {
-        console.log("Battle Result: No victor on this battle field");
+        console.log("Battle Result: Evil eradicates all trace of Good");
     } else {
         console.log('Battle Result: No victor on this battle field');
     }
