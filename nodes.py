@@ -13,7 +13,7 @@ def tree_by_levels(node):
         if temp != None:
             nodes += [temp.left, temp.right]
             final.append(temp.value)
-    print([] if node == None else final)
+    print(final)
 
 
 tree_by_levels(None)
