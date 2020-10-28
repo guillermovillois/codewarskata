@@ -6,15 +6,14 @@ class Node:
 
 
 def tree_by_levels(node):
-    if node == None:
-        print(None)
-    else:
-        lista = []
-        if node.value != None:
-            lista.append(node.value)
-            left = node.left
-            right = node.right
-        print(lista)
+    final = []
+    nodes = [node]
+    while nodes:
+        temp = nodes.pop(0)
+        if temp != None:
+            nodes += [temp.left, temp.right]
+            final.append(temp.value)
+    print([] if node == None else final)
 
 
 tree_by_levels(None)
